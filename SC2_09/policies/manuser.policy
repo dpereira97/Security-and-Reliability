@@ -1,0 +1,13 @@
+grant codeBase "file:${user.home}/SC2_09/-" {
+  permission java.io.FilePermission "servidor/credenciais.txt", "write, read, delete";
+  permission java.io.FilePermission "servidor/mactext.txt", "write, read";
+  permission java.io.FilePermission "servidor/*", "write";
+  permission java.io.FilePermission "servidor/", "write";
+  permission java.io.FilePermission "servidor/keystore/-", "write, read";
+
+};
+
+grant codeBase "file:${java.home}/lib/ext/*" {
+  permission java.security.AllPermission;
+};
+

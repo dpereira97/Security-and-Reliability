@@ -1,0 +1,19 @@
+/* AUTOMATICALLY GENERATED ON Mon Mar 19 18:14:36 GMT 2018*/
+/* DO NOT EDIT */
+
+grant codeBase "file:${user.home}/SC2_09/-" {
+  permission java.util.PropertyPermission "javax.net.ssl.keyStore", "write";
+  permission java.util.PropertyPermission "javax.net.ssl.keyStorePassword", "write";
+  
+  permission java.net.SocketPermission "localhost:23232", "listen, resolve, accept";
+  permission java.net.SocketPermission "localhost:*", "accept,resolve";
+  
+  permission java.io.FilePermission "servidor/-/", "read, write, delete";
+  permission java.io.FilePermission "servidor/-", "read, write";
+  permission java.io.FilePermission "servidor", "write";
+  permission java.io.FilePermission "servidor/backup.txt", "delete";
+};
+
+grant codeBase "file:${java.home}/lib/ext/*" {
+  permission java.security.AllPermission;
+};

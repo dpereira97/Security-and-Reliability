@@ -1,0 +1,15 @@
+/* AUTOMATICALLY GENERATED ON Mon Mar 19 19:20:55 GMT 2018*/
+/* DO NOT EDIT */
+
+grant codeBase "file:${user.home}/SC2_09/-" {
+  permission java.net.SocketPermission "*:23232", "connect, resolve";
+  permission java.io.FilePermission "./-", "write, read";
+  permission java.io.FilePermission "myClient.keyStore", "read";
+  
+  permission java.util.PropertyPermission "javax.net.ssl.trustStore", "write";
+  permission java.util.PropertyPermission "javax.net.ssl.keyStorePassword", "write";
+};
+
+grant codeBase "file:${java.home}/lib/ext/*" {
+  permission java.security.AllPermission;
+};

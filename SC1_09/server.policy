@@ -1,0 +1,9 @@
+/* AUTOMATICALLY GENERATED ON Mon Mar 19 18:14:36 GMT 2018*/
+/* DO NOT EDIT */
+
+grant codeBase "file:${user.home}/SC1_09/-" {
+  permission java.net.SocketPermission "localhost:23232", "listen, resolve, accept";
+  permission java.io.FilePermission "servidor/-", "read, write";
+  permission java.io.FilePermission "servidor", "write";
+};
+
